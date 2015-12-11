@@ -1,0 +1,13 @@
+package com.xuan.studydemo;
+
+import android.annotation.SuppressLint;
+import android.support.v7.app.ActionBarActivity;
+
+@SuppressLint("NewApi")
+public class gridTest extends ActionBarActivity {
+
+	public gridTest() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

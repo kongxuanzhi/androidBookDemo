@@ -1,0 +1,11 @@
+package com.xuan.Dialog;
+
+import android.support.v7.app.ActionBarActivity;
+import android.widget.Button;
+
+public class ProgressDialogActivity  extends ActionBarActivity{
+
+	private Button mBtnProgDlg;
+	
+
+}

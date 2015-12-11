@@ -1,0 +1,27 @@
+package com.xuan.Dialog;
+
+import com.xuan.studydemo.R;
+
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.Button;
+import android.widget.TextView;
+
+@SuppressLint("NewApi")
+public class AlertDialogActivity extends ActionBarActivity {
+
+		private Button mBtnAlertDlg, mBtnALertDlgBld;
+		private TextView mTxtResult;
+		
+		@Override
+		protected void onCreate(Bundle savedInstanceState) {
+			// TODO Auto-generated method stub
+			super.onCreate(savedInstanceState);
+			setContentView(R.layout.activity_alert_dialog);
+			
+		
+		}
+}

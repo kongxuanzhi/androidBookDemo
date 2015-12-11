@@ -1,0 +1,24 @@
+package com.xuan.studydemo;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.GridView;
+
+@SuppressLint("NewApi")
+public class gridTest extends ActionBarActivity {
+
+	private GridView grdView;
+	
+	private Integer[] thumbImgArr = {
+			R.drawable.img,R.drawable.img,R.drawable.img,R.drawable.img,R.drawable.img,
+			R.drawable.img,R.drawable.img,R.drawable.img,R.drawable.img,R.drawable.img,
+			R.drawable.img,R.drawable.img,R.drawable.img,R.drawable.img,R.drawable.img,
+	};
+	 @Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.xuan.studydemo;
+
+import java.util.List;
+import java.util.Map;
+
+import android.app.ListActivity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class listTest extends ListActivity {
+
+	private TextView mTxtResult;
+	private List<Map<String,Object>> mList;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.list_main);
+		setViewComponet();
+	}
+	private void setViewComponet()
+	{
+		
+	}
+	
+}

@@ -1,0 +1,41 @@
+package com.xuan.studydemo;
+
+import com.xuan.threads.DoLengthyWork_thread;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.ProgressBar;
+import android.widget.RatingBar;
+import android.widget.SeekBar;
+import android.widget.TextView;
+
+@SuppressLint("NewApi")
+public class ProgressActivity extends ActionBarActivity {
+
+	private Handler mhandler = new Handler();
+	
+	private RatingBar mRatBar;
+	private SeekBar mSeekBar;
+	private TextView mTxtSeekBar, mTxt1RatBar,mTxt2RatBar;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_progressbar);
+		
+		setViewComponent();
+	}
+	private void 	setViewComponent(){
+		final ProgressBar proBar = (ProgressBar) this.findViewById(R.id.proBar_hor);
+		new DoLengthyWork_thread(mhandler,proBar).start();
+		
+		mRatBar = (RatingBar) this.findViewById(R.id.ratBar);
+		mSeekBar = (SeekBar) this.findViewById(R.id.seekBar);
+		mTxtSeekBar = (TextView) this.findViewById(R.id.txtSeekBar);
+		mTxt1RatBar = (TextView) this.findViewById(R.id.txt1RatBar);
+		mTxt2RatBar = (TextView) this.findViewById(R.id.txt2RatBar);
+	}
+}

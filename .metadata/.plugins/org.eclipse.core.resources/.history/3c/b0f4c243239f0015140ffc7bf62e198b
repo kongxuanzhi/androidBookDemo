@@ -1,0 +1,36 @@
+package com.xuan.studydemo;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import android.app.ListActivity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class listTest extends ListActivity {
+
+	private TextView mTxtResult;
+	private List<Map<String,Object>> mList;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.list_main);
+		setViewComponent();
+	}
+	private void setViewComponent(){
+		mTxtResult = (TextView) this.findViewById(R.id.txtResult);
+		
+		String listFromResources[] = getResources().getStringArray(R.array.weekday);
+		mList = new ArrayList<Map<String,Object>>();
+		
+		for (int i=0;i<listFromResources.length;i++){
+			Map<String,Object> item = new HashMap<String, Object>();
+			item.put("imgView",android.R.drawable.ic_menu_my_calendar);
+			item.put("txtView", listFromResources[i]);
+			mList.add(item)''
+		}
+	}
+}

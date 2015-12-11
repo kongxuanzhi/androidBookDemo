@@ -1,0 +1,49 @@
+package com.xuan.Dialog;
+
+import com.xuan.studydemo.R;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+@SuppressLint("NewApi")
+public class DialogActivity extends ActionBarActivity {
+	private Button mBtnTimePicDlg,mBtnDatePicDlg;
+	private TextView mTxtResult;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_dialog);
+		
+		setupViewComponet();
+	}
+	private void setupViewComponet(){
+		mBtnTimePicDlg = (Button) this.findViewById(R.id.btnTimePicDlg);
+		mBtnDatePicDlg = (Button) this.findViewById(R.id.btnDatePicDlg);
+		mTxtResult = (TextView) this.findViewById(R.id.btn_Ok);
+		
+		mBtnTimePicDlg.setOnClickListener(btnTimePicDlgOnClkLis);
+		mBtnDatePicDlg.setOnClickListener(btnDatePicDlgOnClkLis);
+	}
+	private Button.OnClickListener btnDatePicDlgOnClkLis = new Button.OnClickListener(){
+
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			
+		}
+	};
+	private Button.OnClickListener btnTimePicDlgOnClkLis = new Button.OnClickListener(){
+
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			
+		}
+	};
+}

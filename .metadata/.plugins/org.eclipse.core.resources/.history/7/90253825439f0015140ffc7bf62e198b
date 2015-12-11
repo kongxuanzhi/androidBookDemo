@@ -1,0 +1,34 @@
+package com.xuan.studydemo;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.TextView;
+import android.widget.TimePicker;
+
+@SuppressLint("NewApi")
+@SuppressWarnings("deprecation")
+public class TimeAndDate extends ActionBarActivity {
+	  private DatePicker mDataPik;
+	  private TimePicker mTimePik;
+	  
+	  private TextView mTextResult;
+	  private Button mBtnOK;
+	  
+	  @Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_time);
+		
+		setViewComponent();
+	}
+	  private void setViewComponent(){
+		  mDataPik = this.findViewById(R.id.dataPic);
+		  mTimePik = this.findViewById(R.id.timePic);
+		  mTextResult = this.findViewById(R.id.txtResult);
+		  mBtnOK = this.findViewById(R.id.btn_Ok);
+	  }
+}

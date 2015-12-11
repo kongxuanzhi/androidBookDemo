@@ -1,0 +1,51 @@
+package com.xuan.adapters;
+
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+
+public class ImageAdapterGridView extends BaseAdapter {
+
+	private Context context;
+	private Integer[] IntArr;
+	
+	public ImageAdapterGridView(Context context) {
+		// TODO Auto-generated constructor stub
+		this.context = context;
+	}
+
+	public void setImages(Integer[] IntArr){
+		this.IntArr = IntArr;
+	}
+	@Override
+	public int getCount() {
+		// TODO Auto-generated method stub
+		return IntArr.length;
+	}
+
+	@Override
+	public Object getItem(int position) {
+		// TODO Auto-generated method stub
+		return IntArr[position];
+	}
+
+	@Override
+	public long getItemId(int position) {
+		// TODO Auto-generated method stub
+		return position;
+	}
+
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		// TODO Auto-generated method stub
+		ImageView v;
+		if(convertView == null){
+			v = new ImageView(context);
+			
+		}
+		return null;
+	}
+
+}

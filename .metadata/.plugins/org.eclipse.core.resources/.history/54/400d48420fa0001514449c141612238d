@@ -1,0 +1,24 @@
+package com.xuan.Dialog;
+
+import com.xuan.studydemo.R;
+
+import android.app.Dialog;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class CustomDialogActivity  extends ActionBarActivity{
+		private Button mBtnLoginDlg;
+		private TextView mTxtResult;
+		private Dialog mLoginDlg;
+		
+		@Override
+		protected void onCreate(Bundle savedInstanceState) {
+			// TODO Auto-generated method stub
+			super.onCreate(savedInstanceState);
+			setContentView(R.layout.custum_dialog_main);
+			setupViewComponent();
+		}
+
+}

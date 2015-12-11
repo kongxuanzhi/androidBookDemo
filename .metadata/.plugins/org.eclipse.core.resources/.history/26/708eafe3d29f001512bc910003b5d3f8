@@ -1,0 +1,9 @@
+package com.xuan.threads;
+
+public class DoLengthyWork_thread extends Thread {
+
+	public DoLengthyWork_thread() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

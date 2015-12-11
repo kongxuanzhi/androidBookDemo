@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabHost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <!-- TabWidget id 一定要设置成这个样子 -->
+	<TabWidget 
+	    android:id="@android:id/tabs"   
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    />
+	<!-- FrameLayout id 一定要设置成这个样子 -->
+	<FrameLayout 
+	    android:id="@android:id/tabcontent"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+	    <LinearLayout 
+	        android:id="@+id/tab1"
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="70dp"
+	        >
+			          <DatePicker android:id="@+id/dataPic"
+		        android:layout_width="wrap_content"
+		        android:layout_height="200dp"
+		        />
+				    <TimePicker  android:id="@+id/timePic"
+				        android:layout_width="wrap_content"
+				        android:layout_height="200dp"
+				        />
+					<Button android:id="@+id/btn_Ok"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:text="@string/promtBtnOK"
+					    />
+					<TextView android:id="@+id/text_result"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:text="@string/result"
+					    />
+	        </LinearLayout>
+	    <LinearLayout 
+	        android:id="@+id/tabl2"
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="70dp"
+	        ></LinearLayout>
+	</FrameLayout>
+</TabHost>

@@ -1,0 +1,14 @@
+package com.xuan.threads;
+
+import android.os.Handler;
+import android.widget.ProgressBar;
+
+public class DoLengthyWork_thread extends Thread {
+
+	private Handler mhandler;
+	private ProgressBar mProBar;
+	public DoLengthyWork_thread() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

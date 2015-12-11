@@ -1,0 +1,48 @@
+package com.xuan.Dialog;
+
+import com.xuan.studydemo.R;
+
+import android.app.ProgressDialog;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class ProgressDialogActivity  extends ActionBarActivity 
+					implements OnClickListener{
+
+	private Button mBtnProgDlg;
+	private Handler mHandler = new Handler();
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_progress_dialog);
+		setupViewComponent();
+	}
+	private void setupViewComponent(){
+		mBtnProgDlg = (Button) this.findViewById(R.id.btnProgDlg);
+		mBtnProgDlg.setOnClickListener(this);
+	}
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		switch (v.getId()) {
+		case R.id.btnProgDlg:
+			final ProgressDialog progDlg = new ProgressDialog(ProgressDialogActivity.this);
+			progDlg.setTitle("«Î…‘µ»");
+			progDlg.setMessage("÷¥––÷–......");
+			progDlg.setIcon(android.R.drawable.ic_dialog_info);
+			progDlg.setCancelable(false);
+			progDlg.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+			progDlg.setMax(100);
+			break;
+		default:
+			break;
+		}
+	}
+
+}

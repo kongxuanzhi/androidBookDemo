@@ -1,0 +1,32 @@
+package com.xuan.studydemo;
+
+import com.xuan.threads.DoLengthyWork_thread;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.ProgressBar;
+
+@SuppressLint("NewApi")
+public class ProgressActivity extends ActionBarActivity {
+
+	private Handler mhandler = new Handler();
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_progressbar);
+		
+		setViewComponent();
+	}
+	private void 	setViewComponent(){
+		final ProgressBar proBar = (ProgressBar) this.findViewById(R.id.proBar_hor);
+		
+		DoLengthyWork_thread work = new DoLengthyWork_thread();
+		work.setHandler(mhandler);
+		work.setProgressBar(proBar);
+		work.start();
+	}
+}

@@ -1,0 +1,11 @@
+package com.xuan.Dialog;
+
+import android.support.v7.app.ActionBarActivity;
+
+public class ProgressDialogActivity  extends ActionBarActivity{
+
+	public ProgressDialogActivity() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

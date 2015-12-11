@@ -1,0 +1,12 @@
+package com.xuan.studydemo;
+
+import android.annotation.SuppressLint;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.DatePicker;
+
+@SuppressLint("NewApi")
+@SuppressWarnings("deprecation")
+public class TimeAndDate extends ActionBarActivity {
+	  private DatePicker mDataPik;
+	  private TimePicker mTimePkk;
+}

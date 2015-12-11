@@ -1,0 +1,9 @@
+package com.xuan.Dialog;
+
+public class CustomDialogActivity {
+
+	public CustomDialogActivity() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.xuan.Dialog;
+
+import android.annotation.SuppressLint;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.Button;
+import android.widget.TextView;
+
+@SuppressLint("NewApi")
+public class DialogActivity extends ActionBarActivity {
+	private Button mBtnTimePicDlg,mBtnDatePicDlg;
+	private TextView mTxtResult;
+	
+}

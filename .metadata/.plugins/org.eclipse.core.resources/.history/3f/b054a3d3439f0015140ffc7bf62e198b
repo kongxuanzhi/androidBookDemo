@@ -1,0 +1,51 @@
+package com.xuan.studydemo;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.TextView;
+import android.widget.TimePicker;
+
+@SuppressLint("NewApi")
+@SuppressWarnings("deprecation")
+public class TimeAndDate extends ActionBarActivity {
+	  private DatePicker mDataPik;
+	  private TimePicker mTimePik;
+	  
+	  private TextView mTextResult;
+	  private Button mBtnOK;
+	  
+	  @Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_time);
+		
+		setViewComponent();
+	}
+	  private void setViewComponent(){
+		  mDataPik = (DatePicker) this.findViewById(R.id.dataPic);
+		  mTimePik = (TimePicker) this.findViewById(R.id.timePic);
+		  mTextResult = (TextView) this.findViewById(R.id.txtResult);
+		  mBtnOK = (Button) this.findViewById(R.id.btn_Ok);
+		  
+		  mBtnOK.setOnClickListener(btnDoOkonClick);
+	  }
+	  
+	  private Button.OnClickListener btnDoOkonClick = new Button.OnClickListener(){
+
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			String s = getString(R.string.result);
+			mTextResult.setText(s+mDataPik.getYear() + ""+
+			(mDataPik.getMonth()+1)+""+
+					mDataPik.getDayOfMonth() +""+mTimePik.getCurrentHour()+""+
+			mTimePik.getCurrentMinute()+""
+					);
+		}		  
+	  };
+}

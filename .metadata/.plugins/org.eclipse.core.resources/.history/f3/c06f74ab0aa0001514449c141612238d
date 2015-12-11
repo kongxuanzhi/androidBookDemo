@@ -1,0 +1,9 @@
+package com.xuan.Dialog;
+
+public class ProgressDialogActivity {
+
+	public ProgressDialogActivity() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

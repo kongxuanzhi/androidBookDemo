@@ -1,0 +1,11 @@
+package com.xuan.studydemo;
+
+import android.support.v7.app.ActionBarActivity;
+
+public class ProgressActivity extends ActionBarActivity {
+
+	public ProgressActivity() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

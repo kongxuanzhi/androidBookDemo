@@ -1,0 +1,12 @@
+package com.xuan.threads;
+
+import android.os.Handler;
+
+public class DoLengthyWork_thread extends Thread {
+
+	private Handler mhandler;
+	public DoLengthyWork_thread() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

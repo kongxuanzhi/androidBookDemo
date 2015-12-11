@@ -1,0 +1,26 @@
+package com.xuan.studydemo;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.RatingBar;
+import android.widget.SeekBar;
+import android.widget.TextView;
+
+public class TabActivity extends ActionBarActivity {
+
+		private Handler mhandler = new Handler();
+		
+		private RatingBar mRatBar;
+		private SeekBar mSeekBar;
+		private TextView mTxtSeekBar, mTxt1RatBar,mTxt2RatBar;
+	
+		@Override
+		protected void onCreate(Bundle savedInstanceState) {
+			// TODO Auto-generated method stub
+			super.onCreate(savedInstanceState);
+			setContentView(R.layout.activity_tabs);
+			setViewComponent();
+		}
+		setViewComponent();
+}

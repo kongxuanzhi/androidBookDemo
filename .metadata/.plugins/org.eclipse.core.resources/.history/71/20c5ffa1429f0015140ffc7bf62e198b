@@ -1,0 +1,10 @@
+package com.xuan.studydemo;
+
+import android.annotation.SuppressLint;
+import android.support.v7.app.ActionBarActivity;
+
+@SuppressLint("NewApi")
+@SuppressWarnings("deprecation")
+public class TimeAndDate extends ActionBarActivity {
+	
+}

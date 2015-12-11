@@ -1,0 +1,27 @@
+package com.xuan.Dialog;
+
+import com.xuan.studydemo.R;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.Button;
+
+public class ProgressDialogActivity  extends ActionBarActivity{
+
+	private Button mBtnProgDlg;
+	private Handler mHandler = new Handler();
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_progress_dialog);
+		setupViewComponent();
+	}
+	private void setupViewComponent(){
+		mBtnProgDlg = (Button) this.findViewById(R.id.btnProgDlg);
+		mBtnProgDlg.setOnClickListener(this);
+	}
+
+}

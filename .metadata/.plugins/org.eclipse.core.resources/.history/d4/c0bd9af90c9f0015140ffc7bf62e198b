@@ -1,0 +1,86 @@
+package com.xuan.studydemo;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup.LayoutParams;
+import android.view.animation.AnimationUtils;
+import android.widget.Gallery;
+import android.widget.ImageSwitcher;
+import android.widget.ImageView;
+import android.widget.ViewSwitcher;
+
+import com.xuan.adapters.ImageAdapter;
+
+@SuppressLint("NewApi") 
+public class MainActivity extends ActionBarActivity 
+										implements ViewSwitcher.ViewFactory{
+
+	private Gallery gallery;
+	private ImageSwitcher imgSwi;
+	
+	private Integer[] imgArr={
+			R.drawable.img,R.drawable.img2,R.drawable.img3
+	};
+	private Integer[] thumbImgArr	= {
+			R.drawable.img,R.drawable.img2,R.drawable.img3
+	};	
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        setViewComponent();
+    }
+   
+   public void  setViewComponent(){
+	   gallery = (Gallery) this.findViewById(R.id.gal);
+	   imgSwi = (ImageSwitcher) this.findViewById(R.id.imgSwi);
+	   imgSwi.setFactory(this);
+	   imgSwi.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
+	   imgSwi.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
+	   
+	   ImageAdapter imgAdap = new ImageAdapter(this);
+	   imgAdap.setImageArray(thumbImgArr);
+	   
+	   gal = findViewById(R.id.gal);
+	   
+   }
+    
+   @Override
+	public View makeView() {
+		// TODO Auto-generated method stub
+	   ImageView v = new ImageView(this);
+	   
+	   v.setBackgroundColor(0xFF000000);
+	   v.setScaleType(ImageView.ScaleType.FIT_CENTER);
+	   v.setLayoutParams(new ImageSwitcher.LayoutParams(
+			   LayoutParams.FILL_PARENT,
+			   LayoutParams.FILL_PARENT
+			   ));
+		return null;
+	}
+   
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+}
