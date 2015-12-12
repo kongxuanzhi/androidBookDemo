@@ -3,6 +3,7 @@ package com.xuan.studydemo;
 import com.xuan.threads.DoLengthyWork_thread;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
@@ -12,7 +13,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 @SuppressLint("NewApi")
-public class ProgressActivity extends ActionBarActivity {
+public class ProgressActivity extends Activity {
 
 	private Handler mhandler = new Handler();
 	

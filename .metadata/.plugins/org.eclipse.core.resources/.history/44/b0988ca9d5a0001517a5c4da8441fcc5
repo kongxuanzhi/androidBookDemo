@@ -1,0 +1,32 @@
+package com.xuan.broadcast;
+
+import com.xuan.studydemo.R;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+
+public class activity_broadcast extends Activity {
+
+	private Button
+								 mBtnRegReceiver,
+								 mBtnUnregReceiver,
+								 mBtnSendBroadcase1,
+								 mBtnSendBroadcase2;
+	private MyBroadcaseReceive2 mMyReceiver2;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_broadcast_rece);
+		
+		setupViewComponent();
+	}
+	private void setupViewComponent(){
+		 mBtnRegReceiver = (Button) this.findViewById(R.id.btnRegReceiver);  
+		 mBtnUnregReceiver= (Button) this.findViewById(R.id.btnRegReceiver);  
+		 mBtnSendBroadcase1= (Button) this.findViewById(R.id.btnRegReceiver);  
+		 mBtnSendBroadcase2= (Button) this.findViewById(R.id.btnRegReceiver);  
+	}
+}
+

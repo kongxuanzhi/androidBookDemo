@@ -1,0 +1,10 @@
+package com.xuan.intent;
+
+import android.app.Activity;
+import android.widget.TextView;
+
+public class MyImageActivity extends Activity {
+
+	private TextView  mTxtResult;
+
+}

@@ -1,0 +1,31 @@
+package com.xuan.intent;
+
+import com.xuan.studydemo.R;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class MyImageActivity extends Activity {
+
+	private TextView  mTxtResult;
+	 
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_my_image_act);
+		setupViewComponent();]
+		showResult();
+	}
+	
+	private void setupViewComponent(){
+		mTxtResult = (TextView) this.findViewById(R.id.txtResult);
+	}
+	private void 	showResult(){
+		
+	}
+}
+
+
+

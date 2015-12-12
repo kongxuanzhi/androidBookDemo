@@ -1,9 +1,0 @@
-package com.xuan.Dialog;
-
-import android.annotation.SuppressLint;
-import android.support.v7.app.ActionBarActivity;
-
-@SuppressLint("NewApi")
-public class DialogActivity extends ActionBarActivity {
-	
-}

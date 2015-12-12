@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
-<Button android:id="@+id/btnLoginDlg"
+    <Button android:id="@+id/btnLoginDlg"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="登入系统"

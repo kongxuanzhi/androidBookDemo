@@ -1,0 +1,6 @@
+package com.xuan.broadcast;
+
+
+public class MyBroadcaseReceive1 extends BroadcastRecord {
+
+}

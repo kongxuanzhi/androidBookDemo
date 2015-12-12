@@ -1,0 +1,61 @@
+package com.xuan.intent;
+
+import com.xuan.studydemo.R;
+
+import android.annotation.SuppressLint;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+@SuppressLint("NewApi")
+public class main extends ActionBarActivity 
+									implements OnClickListener{
+
+	 private Button  mBtnBrowserWWW,
+	 								 mBtnPlayMP3,
+	 								 mBtnViewImg,
+	 								 mBtnMakeCall;
+	 
+	 @Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_intent);
+		
+		setupViewComponent();
+	}
+	 private void setupViewComponent(){
+		     mBtnBrowserWWW =(Button) this.findViewById(R.id.btnBrowserWWW);
+			 mBtnPlayMP3 = (Button) this.findViewById(R.id.btnPlayMp3);
+			 mBtnViewImg = (Button) this.findViewById(R.id.btnViewImg);
+			 mBtnMakeCall = (Button) this.findViewById(R.id.btnMakeCall);
+			 
+			 mBtnBrowserWWW.setOnClickListener(this);
+			 mBtnPlayMP3.setOnClickListener(this);
+			 mBtnViewImg.setOnClickListener(this);
+			 mBtnMakeCall.setOnClickListener(this);
+	 }
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		switch (v.getId()) {
+			case R.id.btnBrowserWWW:
+				Uri uri = Uri.parse("https://www.baidu.com/?tn=10018801_hao");
+				break;
+	        case R.id.btnPlayMp3:
+				
+				break;
+	        case R.id.btnViewImg:
+				
+				break;
+	        case R.id.btnMakeCall:
+				
+				break;
+			default:
+				break;
+		}
+	}
+}

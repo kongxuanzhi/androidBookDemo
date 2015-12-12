@@ -1,0 +1,8 @@
+package com.xuan.broadcast;
+
+import android.content.BroadcastReceiver;
+
+
+public class MyBroadcaseReceive1 extends BroadcastReceiver {
+
+}

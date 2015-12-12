@@ -1,8 +1,0 @@
-package com.xuan.Dialog;
-
-import android.support.v7.app.ActionBarActivity;
-
-public class CustomDialogActivity  extends ActionBarActivity{
-		private Button mBtnLoginDlg;
-
-}

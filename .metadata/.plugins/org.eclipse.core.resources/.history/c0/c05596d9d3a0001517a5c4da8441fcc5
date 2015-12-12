@@ -1,0 +1,9 @@
+package com.xuan.broadcast;
+
+public class activity_broadcast {
+
+	public activity_broadcast() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

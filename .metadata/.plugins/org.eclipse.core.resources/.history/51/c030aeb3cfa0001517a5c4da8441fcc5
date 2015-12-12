@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xuan.studydemo"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+      
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.xuan.studydemo.TabActivityIntent"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity 
+             android:name=".MainActivity">
+         </activity>
+         <activity 
+             android:name=".gridTest" 
+             android:label=""
+             ></activity>
+         <activity android:name=".listTest"
+             android:label=""
+             ></activity>
+         <activity android:name=".TimeAndDate"></activity> 
+         <activity android:name=".ProgressActivity"
+             android:label=""
+             ></activity>
+         <activity android:name=".TabActivity"
+             android:label=""
+             ></activity>
+         <activity android:name="com.xuan.Dialog.DialogActivity"
+             android:label=""
+             ></activity>
+         <activity android:name="com.xuan.Dialog.AlertDialogActivity"
+             android:label=""
+             ></activity>
+         <activity android:name="com.xuan.Dialog.ProgressDialogActivity"
+             android:label=""
+             ></activity>
+         <activity android:name="com.xuan.Dialog.CustomDialogActivity"
+             android:label=""
+             ></activity>
+         <activity android:name="com.xuan.intent.main"
+             android:label=""
+             />"
+    </application>
+
+</manifest>

@@ -1,9 +1,0 @@
-package com.xuan.Dialog;
-
-public class AlertDialogActivity {
-
-	public AlertDialogActivity() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

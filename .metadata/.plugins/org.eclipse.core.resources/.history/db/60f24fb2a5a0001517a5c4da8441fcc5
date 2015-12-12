@@ -1,0 +1,22 @@
+package com.xuan.studydemo;
+
+import android.app.TabActivity;
+import android.os.Bundle;
+import android.widget.TabHost;
+
+public class TabActivityIntent extends TabActivity {
+
+	 @Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_tab_intent);
+		setupViewComponent();
+	}
+	 private void setupViewComponent(){
+		 TabHost tabHost = getTabHost();
+		 
+		 Intent it = new Intent();
+	 }
+
+}

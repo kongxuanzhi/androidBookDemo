@@ -1,0 +1,15 @@
+package com.xuan.intent;
+
+import android.support.v7.app.ActionBarActivity;
+import android.widget.Button;
+
+public class main extends ActionBarActivity {
+
+	 private Button  mBtnBrowserWWW,
+	 								 mBtnPlayMP3,
+	 								 mBtnViewImg,
+	 								 mBtnMakeCall;
+	 
+	 
+
+}

@@ -1,0 +1,11 @@
+package com.xuan.studydemo;
+
+import android.app.TabActivity;
+
+public class TabActivityIntent extends TabActivity {
+
+	public TabActivityIntent() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

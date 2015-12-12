@@ -1,0 +1,9 @@
+package com.xuan.Dialog;
+
+public class toastDialog {
+
+	public toastDialog() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

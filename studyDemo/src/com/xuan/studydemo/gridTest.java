@@ -3,12 +3,13 @@ package com.xuan.studydemo;
 import com.xuan.adapters.ImageAdapterGridView;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.GridView;
 
 @SuppressLint("NewApi")
-public class gridTest extends ActionBarActivity {
+public class gridTest extends Activity {
 
 	private GridView grdView;
 	
